@@ -1,6 +1,6 @@
 # Ex.No: 6  Implementation of Jumping  behaviour- Unity
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:                                                                        
+### REGISTER NUMBER :212222243002
 ### AIM: 
 To write a program to simulate the process of jumping in Unity.
 ### Algorithm:
@@ -29,7 +29,7 @@ public class PlayerJump : MonoBehaviour
 {
     private Rigidbody rb;
     public float jumpForce = 5f;
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -37,22 +37,23 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) )
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            
+
         }
     }
 
-   
+
 }
 ```
 ### Output:
 
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/9d4898a5-5c27-4ea9-bceb-5817e75f2ebb" />
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/09b9f383-c7b6-4755-8feb-dda48e17b4aa" />
 
-
-
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b87aca7f-f9cc-498b-8470-db7c5179aa54" />
 
 
 
